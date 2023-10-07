@@ -76,7 +76,7 @@ ul{
 }
 ul li {
 	list-style: none;
-	
+	margin: 10px 0;
 }
 select,input,textarea,button{box-shadow:none;outline:0!important;}
 button {background: transparent;border: 0;}
