@@ -325,7 +325,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 
 /* unvisited link */
 a:link {
-    color: red;
+    color: #3c4258;
     text-decoration: underline;
   }
   
