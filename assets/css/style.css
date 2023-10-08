@@ -94,29 +94,7 @@ html,body{
   opacity: 0;
 }
 
- /* unvisited link */
- a:link {
-    color: red;
-    text-decoration: underline;
-  }
-  
-  /* visited link */
-  a:visited {
-    color: green;
-    text-decoration: underline;
-  }
-  
-  /* mouse over link */
-  a:hover {
-    color: hotpink;
-    text-decoration: underline;
-  }
-  
-  /* selected link */
-  a:active {
-    color: blue;
-    text-decoration: underline;
-  } 
+ 
 
 .fix{position: relative;clear: both;}
 /*=============Style css=========*/
@@ -344,6 +322,30 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 .about-list-icon ul li a i {
     margin-left: 6px;
 }
+
+/* unvisited link */
+a:link {
+    color: red;
+    text-decoration: underline;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: green;
+    text-decoration: underline;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+    text-decoration: underline;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+    text-decoration: underline;
+  } 
 /*.ab-list-icon */
 
 /*.single-about-img */
