@@ -257,7 +257,8 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 }
 .single-about-txt p {
     font-size: 16px;
-    color: #999fb3;
+    color: #636a82;
+    /* color: #999fb3; */
     padding: 35px 0 43px;
     border-bottom: 1px solid #999fb3;
 }
