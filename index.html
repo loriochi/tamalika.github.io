@@ -1,159 +1,99 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Academic Website">
+    <title>Tamalika Mukherjee</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            margin: 1rem;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        section {
+            margin: 2rem;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .about-me {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .about-me img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
 
-    <head>
-        <!-- meta data -->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<header>
+    <h1>Tamalika Mukherjee</h1>
+    <!-- <p>Postdoctoral Research Scientist</p> -->
+</header>
 
-        <!--font-family-->
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
-        
-        <!-- title of site -->
-        <title>Tamalika Mukherjee</title>
+<nav>
+    <a href="#about">About</a>
+    <a href="#publications">Publications</a>
+    <a href="#research">Awards</a>
+    <a href="#academicservice">Academic Service</a>
+</nav>
 
-        <!-- For favicon png -->
-		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
-       
-        <!--font-awesome.min.css-->
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<section id="about">
+    <h2>About Me</h2>
+    <div class="about-me">
+        <!-- Profile picture placeholder -->
+        <img src="assets/images/about/board-profile.jpg" style="width: 55vw; min-width: 330px;" alt="profile_image">
+        <p>
+        I am a Postdoctoral Research Scientist at <a href="https://www.columbia.edu/">Columbia University</a> working with <a href="https://rachelcummings.com/">Rachel Cummings</a>. 
+        I completed my Ph.D. at <a href="https://www.purdue.edu/">Purdue University</a>, where I was fortunate to be advised by <a href="https://www.cs.purdue.edu/homes/egrigore/">Elena Grigorescu</a> and <a href="https://www.cs.purdue.edu/homes/jblocki/">Jeremiah Blocki</a>. 
+        During my Ph.D. I was a Research Intern at <a href="https://www.analog.com/en/about-adi.html">Analog Devices</a> and a Student Researcher at <a href="https://research.google/">Google Research</a>. <br><br>
+        My research explores the intersection of data privacy and theoretical computer science and its impact on society. 
+        My research interests include but are not limited to (1) the design of differentially private algorithms in resource-constrained settings, 
+        where the resource can be time or space,  
+        (2) the interplay of privacy preserving mechanisms with social science, law, and policy.      	<br><br>
+        I am always happy to chat about my research. Feel free to contact me at "tm3391" followed by my current university dot edu.  		<br><br>		
+        </p>
+    </div>
+</section>
 
-		<!--flat icon css-->
-		<link rel="stylesheet" href="assets/css/flaticon.css">
 
-		<!--animate.css-->
-        <link rel="stylesheet" href="assets/css/animate.css">
-
-        <!--owl.carousel.css-->
-        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-		
-        <!--bootstrap.min.css-->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-		
-		<!-- bootsnav -->
-		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
-        
-        <!--style.css-->
-        <link rel="stylesheet" href="assets/css/style.css">
-        
-        <!--responsive.css-->
-        <link rel="stylesheet" href="assets/css/responsive.css">
-        
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		
-        <!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
-    </head>
-	
-	<body>
-		<!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-		
-		<!-- top-area Start -->
-		<header class="top-area">
-			<div class="header-area">
-				<!-- Start Navigation -->
-			    <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
-
-			        <div class="container">
-
-			            <!-- Start Header Navigation -->
-			            <div class="navbar-header">
-			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-			                    <i class="fa fa-bars"></i>
-			                </button>
-			                <!-- <a class="navbar-brand" href="index.html">Tamalika Mukherjee</a> -->
-                            <a class="navbar-brand">Tamalika Mukherjee</a>
-			            </div><!--/.navbar-header-->
-			            <!-- End Header Navigation -->
-
-			            <!-- Collect the nav links, forms, and other content for toggling -->
-			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
-			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-			                <li class=" smooth-menu active"></li>
-<!-- 			                    <li class=" smooth-menu"><a href="#education">education</a></li> -->
-                            <li class=" smooth-menu"><a href="#papers">papers</a></li>
-			                    <li class="smooth-menu"><a href="#awards">awards</a></li>
-			                    <li class="smooth-menu"><a href="#academicservice">academic service</a></li>
-			                </ul><!--/.nav -->
-			            </div><!-- /.navbar-collapse -->
-			        </div><!--/.container-->
-			    </nav><!--/nav-->
-			    <!-- End Navigation -->
-			</div><!--/.header-area-->
-
-		    <div class="clearfix"></div>
-
-		</header><!-- /.top-area-->
-		<!-- top-area End -->
-	
-		<!--welcome-hero start -->
-		<!-- <section id="welcome-hero" class="welcome-hero">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<div class="header-text">
-							<h2>hi <span>,</span> i am <br> tamalika <br> mukherjee <span>.</span>   </h2>
-							<p>computer scientist</p>
-							<a href="assets/download/browney.txt" download>download resume</a> -->
-						<!-- </div>/.header-text -->
-					<!-- </div>/.col -->
-				<!-- </div>/.row -->
-			<!-- </div>/.container -->
-
-		</section><!--/.welcome-hero-->
-		<!--welcome-hero end -->
-
-		<!--about start -->
-		<section id="about" class="about">
-			<div class="section-heading text-center">
-				<h2>about me</h2>
-			</div>
-			<div class="container">
-				<div class="about-content">
-					<div class="row">
-						<div class="col-sm-6">
-							<div class="single-about-txt">
-								
-								<p>
-                                    I am a Postdoctoral Research Scientist at <a href="https://www.columbia.edu/">Columbia University</a> working with <a href="https://rachelcummings.com/">Rachel Cummings</a>. 
-                                    I completed my Ph.D. at <a href="https://www.purdue.edu/">Purdue University</a>, where I was fortunate to be advised by <a href="https://www.cs.purdue.edu/homes/egrigore/">Elena Grigorescu</a> and <a href="https://www.cs.purdue.edu/homes/jblocki/">Jeremiah Blocki</a>. 
-                                    During my Ph.D. I was a Research Intern at <a href="https://www.analog.com/en/about-adi.html">Analog Devices</a> and a Student Researcher at <a href="https://research.google/">Google Research</a>. <br><br>
-                                    My research explores the intersection of data privacy and theoretical computer science and its impact on society. 
-                                    My research interests include but are not limited to (1) the design of differentially private algorithms in resource-constrained settings, 
-                                    where the resource can be time or space,  
-                                    (2) the interplay of privacy preserving mechanisms with social science, law, and policy.      	<br><br>
-                                    I am always happy to chat about my research. Feel free to contact me at "tm3391" followed by my current university dot edu.  		<br><br>			
-									
-									<b> I am on the academic job market this year. Please reach out if you have any openings and think that I would be a good fit!</b>
-                                </p>
-							</div>
-						</div>
-						<div class="col-sm-offset-1 col-sm-5">
-							<div class="single-about-img">
-								<img src="assets/images/about/board-profile.jpg" style="width: 55vw; min-width: 330px;" alt="profile_image">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section><!--/.about-->
-		<!--about end -->
-
-<!--publication start-->
-<section id="papers" class="skills">
-    <div class="section-heading text-center">
-        <h2>papers</h2>
+<section id="publications">
+    <h2>Papers</h2>
         Authors are listed in alphabetical order (as is the norm in CS theory).
-        <h3>pre-prints and working papers</h3>
+        <h3>Pre-prints and Manuscripts</h3>
         <ul>
 			<li> <a href="https://arxiv.org/abs/2407.07262"><i>Differential privacy and Sublinear time are incompatible sometimes</i></a> <br> Jeremiah Blocki, Hendrik Fichtenberger, Elena Grigorescu, Tamalika Mukherjee, <b>TPDP 2024 (selected for contributed talk)</b>.
             </li>
@@ -162,7 +102,13 @@
             <li> <a href="https://arxiv.org/abs/2307.07449"><i>Differentially Private Clustering in Data Streams</i></a> <br> Alessandro Epasto, Tamalika Mukherjee, Peilin Zhong <b>TPDP 2023 (poster)</b>.
             </li>
         </ul>
-        <h3>conference publications</h3>
+        <h3>Journal Publications</h3>
+        <ul>
+          <li><a href="https://www.frontiersin.org/journals/big-data/articles/10.3389/fdata.2024.1420344/full"><i>Equitable Differential Privacy</i></a> <br> Vasundhara Kaul, Tamalika Mukherjee, <b>Frontiers in Big Data, Volume 7, 2024</b></li>
+          <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0304397523004401"><i>On Computing Discretized Ricci Curvatures of Graphs</i></a><br> Bhaskar DasGupta, Elena Grigorescu, Tamalika Mukherjee,
+              <b>Theoretical Computer Science, Volume 975, 2023</b></li>
+        </ul>
+        <h3>Conference Publications</h3>
         <ul>
             <li> <a href="http://arxiv.org/abs/2210.03831"><i>How to Make Your Approximation Algorithm Private: A Black-Box Differentially-Private Transformation for Tunable Approximation Algorithms of Functions with Low Sensitivity </i></a> <br>Jeremiah Blocki, Elena Grigorescu, Tamalika Mukherjee, Samson Zhou, <b>RANDOM 2023</b>.</li>
             <li><a href="https://export.arxiv.org/abs/2302.11081"><i>Differentially Private L2-Heavy Hitters in the Sliding Window Model</i></a> <br>Jeremiah Blocki, Seunghoon Lee, Tamalika Mukherjee, Samson Zhou, <b>ICLR 2023 (selected for spotlight presentation)</b>.</li>
@@ -172,21 +118,10 @@
             <li><a href="https://eprint.iacr.org/2019/1142"><i>Lattice Reduction for Modules, or How to Reduce ModuleSVP to ModuleSVP</i></a> <br>Tamalika Mukherjee, Noah Stephens-Davidowitz, <b>CRYPTO 2020</b>.</li>
             <li><a href="https://eprint.iacr.org/2019/774"><i>Estimating Gaps in Martingales and Applications to Coin-Tossing: Constructions & Hardness</i></a> <br>Hamid Amini Khorasgani, Hemanta Maji, Tamalika Mukherjee, <b>TCC 2019</b>.</li>
           </ul>  
-          <h3>journal publications</h3>
-          <ul>
-            <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0304397523004401"><i>On Computing Discretized Ricci Curvatures of Graphs</i></a><br> Bhaskar DasGupta, Elena Grigorescu, Tamalika Mukherjee,
-                <b>Theoretical Computer Science, Volume 975, 2023</b></li>
-				<li><a href="https://www.frontiersin.org/journals/big-data/articles/10.3389/fdata.2024.1420344/full"><i>Equitable Differential Privacy</i></a> <br> Vasundhara Kaul, Tamalika Mukherjee, <b>Frontiers in Big Data, Volume 7, 2024</b></li>
-          </ul>   
-    </div>
 </section>
 
-</section><!--/.publication-->
-<!--publication end -->
-		<!--publication start-->
-<section id="awards" class="about">
-    <div class="section-heading text-center">
-        <h2>Awards</h2>
+<section id="research">
+    <h2>Awards</h2>
         <ul>
          <li><a href = "https://www.purdue.edu/gradschool/fellowship/funding-resources-for-students/fellowships/managed-fellowships/bilsland-dissertation-fellowship.html">Bilsland Dissertation Fellowship, 2022</a> </li>
          <li><a href="https://www.purdue.edu/cie/teachingawards/gradteaching.html">Teaching Academy Graduate Teaching Award, 2021 </a></li>
@@ -196,14 +131,11 @@
         </li>    
         <li><a href="https://www.rit.edu/news/rit-students-honored-as-exceptional-leaders">RIT Outstanding Service of an International Student Award, 2014 </a>
         </li>  
-        </ul>     
-    </div>
+        </ul>
 </section>
 
-    <!--publication start-->
-    <section id="academicservice" class="about">
-        <div class="section-heading text-center">
-            <h2>Academic Service</h2>
+<section id="academicservice">
+    <h2>Academic Service</h2>
             <h3>Program Committee</h3>
             <ul>
                 <li><a href="https://satml.org/">SaTML 2025</a></li>
@@ -223,48 +155,12 @@
                 <li><a href="http://acm-stoc.org/"><b>STOC</b></a>: 2023</li>
               </ul>   
               <h3>Academic Organization</h3>
-              I organized the <a href="https://www.cs.purdue.edu/theory/seminars.html"><b>Purdue CS Theory Reading Group</b></a> (2021-2022) and served as President (2019-2020) and Faculty Search Chair (2018) of <a href="https://www.cs.purdue.edu/gsa/index.html"><b>Purdue Computer Science Graduate Student Association</b></a>. 
-              <!-- In a previous life, I was the Vice President (2014-2016) of <a href="">PiRIT</a> (RIT's Official Math Club).     -->
-        </div>
-    </section> 
-		
-		
-		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+              I organized the <a href="https://www.cs.purdue.edu/theory/seminars.html"><b>Purdue CS Theory Reading Group</b></a> (2021-2022) and served as President (2019-2020) and Faculty Search Chair (2018) of <a href="https://www.cs.purdue.edu/gsa/index.html"><b>Purdue Computer Science Graduate Student Association</b></a>.
+</section>
 
-		<script src="assets/js/jquery.js"></script>
-        
-        <!--modernizr.min.js-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-		
-		<!--bootstrap.min.js-->
-        <script src="assets/js/bootstrap.min.js"></script>
-		
-		<!-- bootsnav js -->
-		<script src="assets/js/bootsnav.js"></script>
-		
-		<!-- jquery.sticky.js -->
-		<script src="assets/js/jquery.sticky.js"></script>
-		
-		<!-- for progress bar start-->
+<!-- <footer>
+    <p>&copy; 2024 Your Name | All rights reserved</p>
+</footer> -->
 
-		<!-- progressbar js -->
-		<script src="assets/js/progressbar.js"></script>
-
-		<!-- appear js -->
-		<script src="assets/js/jquery.appear.js"></script>
-
-		<!-- for progress bar end -->
-
-		<!--owl.carousel.js-->
-        <script src="assets/js/owl.carousel.min.js"></script>
-
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-		
-        
-        <!--Custom JS-->
-        <script src="assets/js/custom.js"></script>
-        
-    </body>
-	
+</body>
 </html>
