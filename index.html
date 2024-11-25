@@ -28,6 +28,7 @@
             text-decoration: none;
             color: #333;
         }
+
         section {
             margin: 2rem;
             padding: 2rem;
@@ -35,17 +36,29 @@
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        section p {
+            margin-top: 0;
+        }
         .about-me {
-            display: flex;
-            align-items: center;
-            gap: 20px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
         }
+
         .about-me img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
+                width: 100%;
+                height: 100%;
+                max-width: 250px;
+                max-height: 250px;
+                min-width: 250px;
+                min-height: 250px;
+                object-fit: cover;
         }
+        .about-me-description {
+            padding-top: 0;
+            
+        }
+
         footer {
             text-align: center;
             padding: 1rem;
@@ -55,6 +68,17 @@
             width: 100%;
             bottom: 0;
         }
+
+        @media only screen and (min-width: 1200px) {
+            section {
+                padding: 2rem 13rem;
+            }
+
+            .about-me {
+                grid-template-columns: 0.5fr 1.50fr;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -76,8 +100,8 @@
     <h2>About Me</h2>
     <div class="about-me">
         <!-- Profile picture placeholder -->
-        <img src="assets/images/about/nyc-profile.jpg" width="1200" height="2000" alt="profile_image">
-        <p>
+        <img src="assets/images/about/nyc-profile.jpg" alt="profile_image">
+        <p class='about-me-description'>
         I am a Postdoctoral Research Scientist at <a href="https://www.columbia.edu/">Columbia University</a> working with <a href="https://rachelcummings.com/">Rachel Cummings</a>. 
         I completed my Ph.D. in Computer Science at <a href="https://www.purdue.edu/">Purdue University</a>, where I was fortunate to be advised by <a href="https://www.cs.purdue.edu/homes/egrigore/">Elena Grigorescu</a> and <a href="https://www.cs.purdue.edu/homes/jblocki/">Jeremiah Blocki</a>. 
         During my Ph.D. I was a Research Intern at <a href="https://www.analog.com/en/about-adi.html">Analog Devices</a> and a Student Researcher at <a href="https://research.google/">Google Research</a>. <br><br>
