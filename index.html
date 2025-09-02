@@ -40,11 +40,10 @@
             margin-top: 0;
         }
         .about-me {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 2rem;
+             display: flex;
+            align-items: flex-start;
+            gap: 1rem;             /* space between image and text */        
         }
-
         .about-me img {
                 width: 100%;
                 height: 100%;
@@ -55,8 +54,11 @@
                 object-fit: cover;
         }
         .about-me-description {
-            padding-top: 0;
-            
+        flex: 1;               /* let text take remaining width */
+        }
+
+        .about-me-description ul {
+        margin-left: 1.25rem;  /* proper list indent */
         }
 
         footer {
