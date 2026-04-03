@@ -331,6 +331,115 @@
                 padding: 3rem 4rem;
             }
         }
+
+
+		
+/* --- PrivAIL Group Section --- */
+.group-blurb {
+    margin-bottom: 2rem;
+}
+
+.coming-soon-banner {
+    background-color: var(--accent-bg);
+    border: 1.5px dashed var(--primary-color);
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.coming-soon-banner p {
+    margin: 0;
+    color: var(--primary-dark);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.coming-soon-banner .coming-soon-sub {
+    margin-top: 0.4rem;
+    font-weight: 400;
+    color: var(--text-light);
+    font-size: 0.92rem;
+}
+
+/* --- Invited Talks Section --- */
+.talks-subtitle {
+    font-style: italic;
+    color: var(--text-light);
+    margin-top: -0.75rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.talks-list {
+    list-style: none;
+}
+
+.talks-list li {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-medium);
+    line-height: 1.6;
+}
+
+.talks-list li:last-child {
+    border-bottom: none;
+}
+
+.talk-date {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    white-space: nowrap;
+    flex: 0 0 6rem;
+    font-weight: 500;
+}
+
+.talk-body {
+    flex: 1;
+}
+
+.talk-title {
+    color: var(--text-dark);
+    font-weight: 500;
+    display: block;
+    margin-bottom: 0.15rem;
+}
+
+.talk-venue {
+    font-size: 0.92rem;
+    color: var(--text-medium);
+}
+
+.talk-badge {
+    display: inline-block;
+    background-color: var(--accent-bg);
+    color: var(--primary-dark);
+    border: 1px solid #bfdbfe;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.1rem 0.45rem;
+    margin-left: 0.4rem;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.talk-item-hidden {
+    display: none;
+}
+
+@media (max-width: 640px) {
+    .talks-list li {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    .talk-date {
+        flex: none;
+    }
+}
     </style>
 </head>
 <body>
@@ -342,8 +451,10 @@
 <nav>
     <a href="#about">About</a>
     <a href="#news">News</a>
+    <a href="#group">Group</a>
     <a href="#publications">Papers</a>
-    <a href="#research">Honors and Awards</a>
+    <a href="#talks">Talks</a>
+    <a href="#research">Honors & Awards</a>
     <a href="#academicservice">Service</a>
 </nav>
 
@@ -395,6 +506,28 @@
         <li class="news-item-hidden"><b>August 2024:</b> I gave a talk about our <a href="https://arxiv.org/abs/2407.07262">paper on DP and sublinear-time being incompatible</a> at <a href="https://tpdp.journalprivacyconfidentiality.org/2024/">TPDP</a></li>
     </ul>
     <button class="show-more-btn" onclick="toggleNews()">Show More</button>
+</section>
+
+<section id="group">
+    <h2>Research Group</h2>
+    <div class="group-blurb">
+        <p>
+            I lead the Privacy and AI Lab (<b>PrivAIL</b>) at the Max Planck Institute for Security and Privacy.
+            Our work sits at the intersection of <b>data privacy, algorithms, and societal impact</b>.
+            We design rigorous privacy-preserving algorithms — with a focus on differential privacy
+            in streaming and graph settings — and study how privacy mechanisms interact with
+            law, policy, and the communities they are meant to protect.
+        </p>
+        <p>
+            We are committed to building an inclusive, collaborative, and intellectually vibrant group.
+            If you are interested in working with us, feel free to reach out.
+        </p>
+    </div>
+
+    <div class="coming-soon-banner">
+        <p>🔬 PrivAIL is just getting started.</p>
+        <p class="coming-soon-sub">New members joining soon!</p>
+    </div>
 </section>
 
 <section id="publications">
@@ -527,6 +660,85 @@
             Rachel Cummings, Shlomi Hod, Palak Jain, Gabriel Kaptchuk, Tamalika Mukherjee, Priyanka Nanayakkara, Jayshree Sarathy<br>
             <b>Public comment to OMB, 2024</b>
         </li>
+    </ul>
+
+</section>
+
+<section id="talks">
+    <h2>Selected Invited Talks</h2>
+    <p class="talks-subtitle">A curated selection from invited seminars and workshops.</p>
+
+    <ul class="talks-list">
+		        <li>
+            <span class="talk-date">Mar 2026</span>
+            <span class="talk-body">
+                <span class="talk-title">Private and Space-Efficient Counting of Distinct Elements in the Turnstile Model </span>
+                <span class="talk-venue">IIT Madras</span>
+				<span class="talk-badge">Seminar Speaker</span>
+            </span>
+        </li>
+
+        <li>
+            <span class="talk-date">Dec 2025</span>
+            <span class="talk-body">
+                <span class="talk-title">[Talk Title]</span>
+                <span class="talk-venue">Privacy-Preserving Machine Learning Workshop, EurIPS 2025
+                    <span class="talk-badge">Workshop Speaker</span>
+                </span>
+            </span>
+        </li>
+
+        <li>
+            <span class="talk-date">Jan 2025</span>
+            <span class="talk-body">
+                <span class="talk-title">Costs of Privacy Analysis in the Continual Release Model</span>
+                <span class="talk-venue">Workshop on Defining Holistic Private Data Science for Practice
+                    <span class="talk-badge">Workshop Speaker</span>
+                </span>
+            </span>
+        </li>
+
+        <li class="talk-item-hidden">
+            <span class="talk-date">Oct 2024</span>
+            <span class="talk-body">
+                <span class="talk-title">Differentially Private Clustering in Data Streams</span>
+                <span class="talk-venue">New York Academy of Sciences, 15th Annual Machine Learning Symposium
+                    <span class="talk-badge">Spotlight Speaker</span>
+                </span>
+            </span>
+        </li>
+
+		
+        <li>
+            <span class="talk-date">August 2024</span>
+            <span class="talk-body">
+                <span class="talk-title">Differential Privacy and Sublinear Time are Incompatible Sometimes</span>
+                <span class="talk-venue">Theory and Practice of Differential Privacy (TPDP) Workshop, 2024
+                    <span class="talk-badge">Contributed Talk</span>
+                </span>
+            </span>
+        </li>
+
+	        <li class="talk-item-hidden">
+            <span class="talk-date">January, 2023</span>
+            <span class="talk-body">
+                <span class="talk-title">How to Make Your Approximation Algorithm Private</span>
+                <span class="talk-venue"> Quarterly Theory Workshop: 2022 Junior Theorists Workshop 
+                    <span class="talk-badge">Workshop Speaker</span>
+                </span>
+            </span>
+        </li>
+		
+        <li class="talk-item-hidden">
+            <span class="talk-date">June, 2022</span>
+            <span class="talk-body">
+                <span class="talk-title">Differentially Private Sublinear Algorithms</span>
+                <span class="talk-venue">Fifth annual TCS Women Spotlight Workshop (held together with STOC)
+                    <span class="talk-badge">Rising Star Speaker</span>
+                </span>
+            </span>
+        </li>
+
     </ul>
 
 </section>
