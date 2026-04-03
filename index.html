@@ -837,24 +837,23 @@
 
 <script>
 // --- Shared helper ---
-function initToggle({ hiddenSelector, buttonSelector, showLabel, hideLabel }) {
+function initToggle({ hiddenSelector, buttonSelector, showLabel, hideLabel, displayValue = 'list-item' }) {
     const items = document.querySelectorAll(hiddenSelector);
     const button = document.querySelector(buttonSelector);
     if (!button) return;
 
-    // Force hidden state on every page load, overriding any cached inline styles
     items.forEach(item => { item.style.display = 'none'; });
     button.textContent = showLabel;
 
     button.addEventListener('click', function () {
         const isHidden = items[0] && items[0].style.display === 'none';
         items.forEach(item => {
-            item.style.display = isHidden ? 'list-item' : 'none';
+            item.style.display = isHidden ? displayValue : 'none';
         });
         button.textContent = isHidden ? hideLabel : showLabel;
     });
 }
-
+	
 document.addEventListener('DOMContentLoaded', function () {
     initToggle({
         hiddenSelector: '.news-item-hidden',
@@ -868,6 +867,7 @@ document.addEventListener('DOMContentLoaded', function () {
         buttonSelector: '#talks .show-more-btn',
         showLabel: 'Show More',
         hideLabel: 'Show Less',
+		displayValue: 'flex', 
     });
 });
 </script>
